@@ -5,6 +5,7 @@ __pycache__/
 
 instance/
 
+.tm_properties
 .pytest_cache/
 .coverage
 htmlcov/
