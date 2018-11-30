@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 
 from flask import Flask
@@ -27,6 +28,9 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/hello')
     def hello():
-        return 'Hello, World!'
+        return 'This is the first one, dog.'
+    
+    from . import db
+        db.init_app(app)
 
     return app
